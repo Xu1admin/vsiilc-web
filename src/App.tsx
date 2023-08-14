@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{ FC } from 'react';
+import FrameworkLayout from './layouts/FrameworkLayout';
+import { useDispatch, useSelector } from 'react-redux'
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import routers from './routers';
+import Login from './pages/login';
 
-function App() {
+const App:FC<any> = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router basename="/">
+      <Routes>
+        {/*登录*/}
+        <Route path="/login" element={<Login />} />
+        {
+          routers.map((item) => {
+            return <Route 
+                    key={item.path}
+                    path={item.path}
+                    element={
+                      <FrameworkLayout
+                        pathname={item.path}
+                        component={item.component}
+                      />
+                    }
+                  />
+          })
+        }
+        <Route path="/" element={<Navigate to="/index" replace={true}/>} />
+      </Routes>
+    </Router>
   );
 }
 
