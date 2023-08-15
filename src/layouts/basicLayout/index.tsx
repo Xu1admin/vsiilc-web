@@ -11,8 +11,9 @@ function BasicLayout(props: {
   pathname: string;
 }) {
   
+  const { children } = props;
   return (
-    <div>框架</div>
+    <div>{children}</div>
   )
 }
 

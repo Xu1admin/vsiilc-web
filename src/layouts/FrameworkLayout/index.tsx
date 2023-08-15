@@ -16,9 +16,9 @@ function FrameworkLayout(props: {
 
   useEffect(() => {
     dispatch({type:'NAVIGATE_CHANGE',payload: navigate});
-    if(!token){
-      navigate('/login')
-    }
+    // if(!token){
+    //   navigate('/login')
+    // }
   }, [pathname]);
 
   return (
