@@ -6,11 +6,12 @@ import UserLayout from '../UserLayout';
 
 function FrameworkLayout(props: {
   component: any;
+  title: string;
   pathname: string;
 }) {
   const token = useSelector((state:any) => state.Login.token)
   const dispatch = useDispatch()
-  const { pathname, component:Component } = props;
+  const { pathname, title, component:Component } = props;
   const navigate = useNavigate()
   const Layout = pathname === '/login' ? UserLayout : BasicLayout;
 
@@ -22,7 +23,7 @@ function FrameworkLayout(props: {
   }, [pathname]);
 
   return (
-    <Layout pathname={pathname} >
+    <Layout pathname={pathname} title={title} >
       <Component />
     </Layout>
   );

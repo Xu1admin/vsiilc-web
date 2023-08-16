@@ -1,0 +1,51 @@
+.layout{
+    .header{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 3px solid rgb(255,255,255);
+        margin: 0 40px;
+        padding-top: 20px;
+        padding-bottom: 6px;
+        .left,.right{
+            display: flex;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(237, 102, 54);
+            border-radius: 4px;
+            width: 68px;
+            height: 55px;
+            margin-right: 15px;
+            >img{
+                width: 58px;
+            }
+        }
+        .title{
+            .info{
+                font-size: 18px;
+                padding: 10px 25px;
+            }
+        }
+        .link{
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 55px;
+            >a{
+                display: block;
+            }
+            svg{
+                fill: rgb(255,255,255);
+            }
+            .active{
+                svg{
+                    fill: rgb(255,255,0);
+                }
+            }
+        }
+    }
+    .site-layout-content{
+        margin: 0 40px;
+    }
+}

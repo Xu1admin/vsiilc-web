@@ -87,3 +87,12 @@ table {
 ::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(255, 0, 0, 0.4);
 }
+
+
+/* 渐变色按钮 */
+.gradient-title{
+	border-radius: 6px;
+	color: rgb(88, 88, 88);
+	background: linear-gradient(rgb(255, 255, 255),rgb(217, 217, 217));
+	box-shadow: 0 6px 8px rgba(0,0,0,.2);
+}

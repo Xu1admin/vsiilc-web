@@ -19,6 +19,7 @@ const App:FC<any> = () => {
                     element={
                       <FrameworkLayout
                         pathname={item.path}
+                        title={item.title}
                         component={item.component}
                       />
                     }
