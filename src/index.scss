@@ -96,3 +96,19 @@ table {
 	background: linear-gradient(rgb(255, 255, 255),rgb(217, 217, 217));
 	box-shadow: 0 6px 8px rgba(0,0,0,.2);
 }
+
+.defaultText {
+	font-size: 16px;
+	color: rgb(190, 190, 190);
+}
+
+.danger-valueText {
+	font-size: 16px;
+	color: rgb(255, 192, 0);
+}
+
+.warning-valueText {
+	font-size: 16px;
+	color: rgb(192, 80, 77);
+}
+  

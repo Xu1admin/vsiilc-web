@@ -1,4 +1,5 @@
 import Home from "./pages/home";
+import Alarm from "./pages/Alarm";
 
 
 interface IRouter {
@@ -20,7 +21,7 @@ const routers:IRouter[] = [
     name: 'alarm',
     path: '/alarm',
     title: 'Alarm Page',
-    component: Home
+    component: Alarm
   },
   {
     name: 'Configuration',

@@ -1,0 +1,60 @@
+.Alarm-page{
+    display: flex;
+    flex-direction: column;
+    .alarm-header{
+        padding: 35px 0 20px;
+        display: flex;
+        justify-content: center;
+        .con{
+            display: flex;
+            align-items: center;
+        }
+        .icon{
+            font-size: 45px;
+            padding-right: 35px;
+            >svg{
+                fill:rgb(255, 255, 255)
+            }
+        }
+        .button{
+            cursor: pointer;
+            padding: 12px 20px;
+        }
+    }
+    .table-container{
+        margin: 0 auto;
+        .table-thead{
+            display: flex;
+            color: rgb(190, 190, 190);
+            font-weight: 600;
+            font-size: 18px;
+        }
+        .table-tbody{
+            border-top: 3px solid rgb(190, 190, 190);
+            color: rgb(217, 217, 217);
+            .table-row:last-child{
+                .cell{
+                    padding-bottom: 40px;
+                }
+            }
+        }
+        .index{
+            border-right: 3px solid rgb(190, 190, 190);
+            display: inline-block;
+            width: 70px;
+            line-height: 45px;
+            text-align: center;
+        }
+        .date{
+            display: inline-block;
+            width: 220px;
+            line-height: 45px;
+            text-align: center;
+        }
+        .info{
+            display: inline-block;
+            width: 400px;
+            line-height: 45px;
+        }
+    }
+}
