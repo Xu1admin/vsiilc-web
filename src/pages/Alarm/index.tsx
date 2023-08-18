@@ -2,7 +2,7 @@ import React,{ FC } from 'react'
 import { Icons, Image } from '../../assets/image'
 import './index.scss'
 
-const Home:FC<any> = () => {
+const Alarm:FC<any> = () => {
   const dataSouce = [
     { index: 1, time: '7/1/2023 9:10:05', info: 'System Level - Excessive inter-string current', state: '3' },
     { index: 2, time: '7/1/2023 9:10:05', info: 'System Level - Excessive inter-string current', state: '2' },
@@ -52,4 +52,4 @@ const Home:FC<any> = () => {
   );
 }
   
-export default Home
+export default Alarm

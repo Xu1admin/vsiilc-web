@@ -112,3 +112,36 @@ table {
 	color: rgb(192, 80, 77);
 }
   
+
+.defaultButton {
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+	user-select: none;
+	border: 1px solid #fff;
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+	background-color: rgb(79, 129, 189);
+  }
+  
+  .successButton {
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+	user-select: none;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+	background-color: rgb(0, 176, 80);
+  }
+  
+  .warningButton {
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+	user-select: none;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+	background-color: rgb(192, 80, 77);
+  }

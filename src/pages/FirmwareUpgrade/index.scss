@@ -1,0 +1,61 @@
+.FirmwareUpgrade-page {
+    display: flex;
+    .page-cell {
+      padding-top: 70px;
+      width: 540px;
+      margin-left: 120px;
+    }
+    .firmware-header {
+      margin-bottom: 20px;
+      border-bottom: 2px solid rgb(191, 191, 191);
+      span {
+        line-height: 38px;
+        font-size: 18px;
+        color: rgb(191, 191, 191);
+      }
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+      color: rgb(191, 191, 191);
+      .version {
+        color: rgb(255, 192, 0);
+      }
+    }
+    .control {
+      margin-top: 35px;
+      display: flex;
+      justify-content: space-between;
+  
+      .enterBtn {
+        cursor: pointer;
+        border-radius: 4px;
+        padding: 8px 13px 5px;
+        color: rgb(127, 127, 127);
+        user-select: none;
+        border: 1px solid #fff;
+        background-color: rgb(217, 217, 217);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+      }
+      .event {
+        display: inline-block;
+        text-align: center;
+        border-radius: 6px;
+        line-height: 23px;
+        padding: 5px 13px;
+      }
+      
+    }
+    .info {
+      .event {
+        display: inline-block;
+        text-align: center;
+        border-radius: 6px;
+        line-height: 23px;
+        padding: 5px 13px;
+      }
+      
+    }
+  }
+  

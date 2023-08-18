@@ -1,6 +1,7 @@
-import Home from "./pages/home";
-import Alarm from "./pages/Alarm";
-
+import Home from './pages/home';
+import Alarm from './pages/Alarm';
+import DataLog from './pages/DataLog';
+import FirmwareUpgrade from './pages/FirmwareUpgrade';
 
 interface IRouter {
   name: string;
@@ -9,39 +10,37 @@ interface IRouter {
   component?: any;
 }
 
-
-const routers:IRouter[] = [
+const routers: IRouter[] = [
   {
     name: '主页',
     path: '/',
     title: 'Home Page',
-    component: Home
+    component: Home,
   },
   {
     name: 'alarm',
     path: '/alarm',
     title: 'Alarm Page',
-    component: Alarm
+    component: Alarm,
   },
   {
     name: 'Configuration',
     path: '/configuration',
     title: 'Configuration Page',
-    component: Home
+    component: Home,
   },
   {
     name: 'Data Log',
     path: '/dataLog',
     title: 'Data Log Page',
-    component: Home
+    component: DataLog,
   },
   {
     name: 'Firmware Upgrade',
     path: '/firmware',
     title: 'Firmware Upgrade Page',
-    component: Home
-  }
-]
+    component: FirmwareUpgrade,
+  },
+];
 
-
-export default routers
+export default routers;
