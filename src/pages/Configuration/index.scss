@@ -1,0 +1,212 @@
+.Configuration-page{
+    .header-switch-router{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        padding: 0 40px;
+        .config-switch-link{
+            width: 280px;
+            padding: 9px 0 11px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 20px;
+            user-select: none;
+            border: 1px solid #fff;
+            &.active{
+                background: rgb(79, 128, 188) !important;
+                color: rgb(241, 241, 241);
+            }
+        }
+    }
+}
+
+.router-system-page{
+    .control-header{
+        display: flex;
+        margin: 50px 0 30px;
+        .enterBtn {
+            cursor: pointer;
+            border-radius: 6px;
+            padding: 10px 19px;
+            color: rgb(88, 88, 88);
+            user-select: none;
+            font-size: 19px;
+            border: 1px solid #fff;
+            background-color: rgb(217, 217, 217);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+        .write{
+            margin-left: 25px;
+            font-size: 19px;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px 19px;
+        }
+        .errInfo{
+            margin-left: 45px;
+            color: rgb(0, 175, 239);
+            line-height: 20px;
+        }
+    }
+    .table-container{
+        display: inline-block;
+        margin-left: 86px;
+        .table-thead{
+            display: flex;
+            color: rgb(190, 190, 190);
+            font-weight: 600;
+            font-size: 18px;
+        }
+        .table-tbody{
+            border-top: 3px solid rgb(190, 190, 190);
+            color: rgb(217, 217, 217);
+            .table-row:last-child{
+                .cell{
+                    padding-bottom: 40px;
+                }
+            }
+        }
+        .index{
+            border-right: 3px solid rgb(190, 190, 190);
+            display: inline-block;
+            width: 70px;
+            line-height: 45px;
+            text-align: center;
+        }
+        .info{
+            display: inline-block;
+            width: 320px;
+            line-height: 45px;
+            text-align: center;
+        }
+        .value{
+            display: inline-block;
+            text-align: center;
+            width: 150px;
+            &.cell{
+                color: rgb(247, 149, 70);
+            }
+        }
+    }
+}
+
+.router-Vmi-page{
+    width: 1030px;
+    margin: auto;
+    .control-header{
+        display: flex;
+        margin: 50px 0 30px;
+        .enterBtn {
+            cursor: pointer;
+            border-radius: 6px;
+            padding: 10px 19px;
+            color: rgb(88, 88, 88);
+            user-select: none;
+            font-size: 19px;
+            border: 1px solid #fff;
+            background-color: rgb(217, 217, 217);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+        .write{
+            margin-left: 25px;
+            font-size: 19px;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px 19px;
+        }
+    }
+    .vmi-list-box{
+        overflow: hidden;
+        .vmi-control-item{
+            position: relative;
+            float: left;
+            padding-right: 20px;
+            padding-left: 20px;
+            margin-bottom: 30px;
+            &::before{
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 2px;
+                height: 100%;
+                background-color: rgb(190, 190, 190);
+                box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+            }
+            &:nth-child(5n)::before{
+                display: none;
+            }
+            .checked-label{
+                display: flex;
+                align-items: center;
+                user-select: none;
+                cursor: pointer;
+                padding-left: 35px;
+                margin-bottom: 20px;
+                font-size: 20px;
+                color: rgb(217, 217, 217);
+                &:first-child{
+                    padding-left: 15px;
+                    color: rgb(247, 149, 70);
+                }
+                .check-icon{
+                    border: 2px solid rgb(217, 217, 217);
+                    width: 20px;
+                    height: 20px;
+                    text-align: center;
+                    svg{
+                        font-size: 16px;
+                        line-height: 20px;
+                        fill: rgb(217, 217, 217);
+                    }
+                }
+                .name{
+                    padding-left: 15px;
+                }
+            }
+            .name-tack{
+                font-size: 20px;
+                width: 166px;
+                display: inline-block;
+                white-space: break-spaces;
+                color: rgb(217, 217, 217);
+                height: 61px;
+            }
+        }
+    }
+}
+.ip-address-page{
+    width: 950px;
+    padding-top: 90px;
+    margin: auto;
+}
+.SystemClock-page{
+    width: 950px;
+    padding-top: 90px;
+    margin: auto;
+}
+.address-from{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    .address-lable{
+        width: 280px;
+        text-align: right;
+        font-size: 18px;
+        color: rgb(190, 190, 190);
+    }
+    .address-value{
+        padding-left: 20px;
+        color: rgb(255,192,0);
+        font-size: 18px;
+    }
+    .event{
+        margin-left: 35px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 6px;
+        line-height: 23px;
+        padding: 4px 26px;
+    }
+}

@@ -2,6 +2,7 @@ import Home from './pages/home';
 import Alarm from './pages/Alarm';
 import DataLog from './pages/DataLog';
 import FirmwareUpgrade from './pages/FirmwareUpgrade';
+import Configuration from './pages/Configuration';
 
 interface IRouter {
   name: string;
@@ -27,7 +28,7 @@ const routers: IRouter[] = [
     name: 'Configuration',
     path: '/configuration',
     title: 'Configuration Page',
-    component: Home,
+    component: Configuration,
   },
   {
     name: 'Data Log',
