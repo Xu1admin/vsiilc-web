@@ -10,7 +10,7 @@
     }
     .con{
         padding: 25px 20px;
-        border-radius: 5px;
+        border-radius: 11px;
         background: linear-gradient(to right, rgb(207, 207, 207), rgb(241, 241, 241));
     }
     .form{
@@ -97,7 +97,29 @@
                     background-color: #40a9ff;
                     border-color: #40a9ff;
                 }
+                span{
+                    padding-right: 12px;
+                }
+                svg{
+                    font-size: 20px;
+                    vertical-align: -5px;
+                }
+            }
+            &.loading{
+                
+                svg{
+                    animation: loadingCircle 1s infinite linear;
+                    transition: transform 0.3s ease-in-out;
+                    font-size: 20px;
+                    vertical-align: -5px;
+                }
             }
         }
+    }
+}
+@keyframes loadingCircle {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
     }
 }

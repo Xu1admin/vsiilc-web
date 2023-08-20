@@ -43,7 +43,7 @@ function BasicLayout(props: {
             <div className='clickLock'><Icons.unlocks /></div>
           </div>
           <div className='link'>
-            <Link to="/"><Icons.in /></Link>
+            <div className='clickLock'><Icons.in /></div>
           </div>
         </div>
       </div>

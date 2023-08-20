@@ -1,0 +1,12 @@
+.char-page{
+    position: relative;
+    margin: auto;
+    .value{
+        position: absolute;
+        left: 50%;
+        bottom: 6px;
+        font-size: 22px;
+        transform: translateX(-50%);
+        color: rgb(190, 190, 190);
+    }
+}

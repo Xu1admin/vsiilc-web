@@ -7,12 +7,12 @@ import './index.scss'
 const Login:FC<any> = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
-  
+  const [loading,setLoading] = useState(false)
   const onFinish = (values:any) => {
-    navigate('/')
-  }
-  // 发送验证码
-  const requestCode = () => {
+    setLoading(true)
+    setTimeout(() => {
+      navigate('/')
+    },1000)
   }
   return (
     <div className='login-master-page'>
@@ -23,20 +23,20 @@ const Login:FC<any> = () => {
             <span>Username</span>
             <div className='input'>
               <i className='input-prefix'><Icons.user /></i>
-              <input type="text" value="2323" />
+              <input type="text" defaultValue={"admin"} />
             </div>
           </div>
           <div className='item'>
             <span>Password</span>
             <div className='input'>
               <i className='input-prefix'><Icons.lock /></i>
-              <input type="password" value="2323" />
+              <input type="password" defaultValue={"admin"} />
             </div>
           </div>
-          <div className='submit'>
+          <div className={`submit ${loading? 'loading': ''}`}>
             <button type="button" onClick={onFinish} className="submit-bu">
-              Sign In
-              <Icons.logout />
+              <span>Sign In</span>
+              {loading ? <Icons.refresh /> : <Icons.logout />}
             </button>
           </div>
         </div>

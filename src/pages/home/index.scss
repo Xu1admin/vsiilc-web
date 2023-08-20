@@ -39,6 +39,22 @@
     &:first-child{
         margin-right: 100px;
     }
+    .echart{
+        margin-top: 20px;
+        &.felx{
+            display: flex;
+            padding-left: 220px;
+            .cell{
+                width: 300px;
+            }
+        }
+        .unit{
+            padding-bottom: 10px;
+            font-size: 18px;
+            text-align: center;
+            color: rgb(190, 190, 190);
+        }
+    }
     .title-info{
         .label{
             padding: 0 20px;
@@ -46,6 +62,13 @@
         .button{
             display: inline-block;
             padding: 8px 18px;
+        }
+        .control{
+            display: inline-block;
+            text-align: center;
+            width: 300px;
+            font-size: 16px;
+            color: rgb(255, 192, 0);
         }
     }
     .table-list{
@@ -68,6 +91,9 @@
             width: 200px;
             font-size: 16px;
             color: rgb(190, 190, 190);
+            &.chartLine{
+                line-height: 30px;
+            }
         }
         .center{
             text-align: center;
@@ -75,6 +101,9 @@
         .control{
             width: 320px;
             margin-left: 15px;
+            &.Bar{
+                padding-left: 40px;
+            }
             .date{
                 margin-top: 5px;
             }

@@ -1,5 +1,7 @@
 import React,{ FC } from 'react'
 import ControlSwitch from '../../components/controlSwitch'
+import GaugeChart from '../../components/GaugeChart'
+import BarChart from '../../components/BarChart'
 import './index.scss'
 
 const Home:FC<any> = () => {
@@ -11,23 +13,26 @@ const Home:FC<any> = () => {
           <span className="label defaultText">Heartbeat</span>
           <span className="danger-valueText">98</span>
         </div>
-        <div className="echart"></div>
+        <div className="echart">
+          <div className='unit'>Kw</div>
+          <GaugeChart width={200} height={80} value={78} />
+        </div>
 
         <div className="table-list">
-          <div className="label">Volt</div>
-          <div className="control">1</div>
+          <div className="label chartLine">Volt</div>
+          <div className="control"><BarChart width={160} height={30} value={78} unit={null} /></div>
         </div>
         <div className="table-list">
-          <div className="label">SoC</div>
-          <div className="control">2</div>
+          <div className="label chartLine">SoC</div>
+          <div className="control"><BarChart width={160} height={30} value={90} unit={'%'} /></div>
         </div>
         <div className="table-list">
-          <div className="label">Charge Rate</div>
-          <div className="control">3</div>
+          <div className="label chartLine">Charge Rate</div>
+          <div className="control"><BarChart width={160} height={30} value={160} unit={'Amps'} /></div>
         </div>
         <div className="table-list">
           <div className="label">Discharge Rate</div>
-          <div className="control">4</div>
+          <div className="control"><BarChart width={160} height={30} value={169} unit={'Amps'} /></div>
         </div>
         <div className="table-list">
           <div className="label">System Status</div>
@@ -70,20 +75,29 @@ const Home:FC<any> = () => {
       <div className="col-item">
         <div className="title-info">
           <span className="button gradient-title">String Status</span>
-          <span className="defaultText">Heartbeat</span>
-          <span className="danger-valueText">98</span>
+          <span className="control" style={{paddingLeft: '92px'}}>String 1</span>
+          <span className="control">String 2</span>
         </div>
-        <div className="echart"></div>
+        <div className="echart felx">
+          <div className='cell'>
+            <div className='unit'>Amps</div>
+            <GaugeChart width={200} height={80} value={78} />
+          </div>
+          <div className='cell'>
+            <div className='unit'>Amps</div>
+            <GaugeChart width={200} height={80} value={78} />
+          </div>
+        </div>
 
         <div className="table-list">
           <div className="label">Volt</div>
-          <div className="control">1</div>
-          <div className="control">1</div>
+          <div className="control Bar"><BarChart width={200} height={30} value={78} unit={null} /></div>
+          <div className="control"><BarChart width={200} height={30} value={78} unit={null} /></div>
         </div>
         <div className="table-list">
           <div className="label">SoC(%)</div>
-          <div className="control">2</div>
-          <div className="control">2</div>
+          <div className="control Bar"><BarChart width={200} height={30} value={78} unit={'%'} /></div>
+          <div className="control"><BarChart width={200} height={30} value={78} unit={'%'} /></div>
         </div>
         <div className="table-list" style={{alignItems: 'center'}}>
           <div className="label">Contactor Status</div>
